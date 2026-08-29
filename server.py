@@ -72,6 +72,53 @@ def _run(cmd: list[str], timeout: int) -> str:
     return result.stdout + result.stderr
 
 
+def _scan_open_ports(
+    ip: str, ports: list[int], timeout_seconds: float, max_workers: int
+) -> list[dict[str, Any]]:
+    """Check `ports` on `ip` via plain TCP connect attempts, returning open ones with a service name."""
+
+    def check_port(port: int) -> tuple[int, bool]:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+            sock.settimeout(timeout_seconds)
+            result = sock.connect_ex((ip, port))
+            return port, result == 0
+
+    open_ports: list[dict[str, Any]] = []
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        futures = [pool.submit(check_port, p) for p in ports]
+        for future in as_completed(futures):
+            port, is_open = future.result()
+            if is_open:
+                try:
+                    service = socket.getservbyport(port)
+                except OSError:
+                    service = COMMON_PORTS.get(port, "unknown")
+                open_ports.append({"port": port, "service": service})
+
+    open_ports.sort(key=lambda p: p["port"])
+    return open_ports
+
+
+def _reverse_dns(ip: str) -> str | None:
+    try:
+        hostname, _aliases, _addrs = socket.gethostbyaddr(ip)
+        return hostname
+    except (socket.herror, socket.gaierror, OSError):
+        return None
+
+
+def _mac_vendor(mac: str) -> str | None:
+    try:
+        from scapy.all import conf
+    except ImportError:
+        return None
+    try:
+        _short, full = conf.manufdb.lookup(mac)
+    except Exception:  # noqa: BLE001 - vendor DB lookups shouldn't fail discovery
+        return None
+    return full if full and full.lower() != mac.lower() else None
+
+
 @mcp.tool()
 def list_network_interfaces() -> dict[str, Any]:
     """List local network interfaces with their IPv4 addresses, netmasks,
@@ -176,13 +223,8 @@ def ping_sweep(subnet: str, max_workers: int = 64, timeout_seconds: int = 1) -> 
     return {"subnet": subnet, "scanned": len(hosts), "alive_hosts": alive_hosts}
 
 
-@mcp.tool()
-def arp_scan(subnet: str, timeout_seconds: int = 3) -> dict[str, Any]:
-    """Discover live hosts on the local subnet via ARP requests, returning
-    IP and MAC address for each responder. More reliable than ping on a
-    LAN since it works even when hosts block ICMP.
-    Requires scapy and typically root/CAP_NET_RAW privileges to send raw
-    ARP frames. `subnet` must be CIDR notation, e.g. '192.168.1.0/24'."""
+def _arp_discover(subnet: str, timeout_seconds: int) -> list[dict[str, str]] | dict[str, Any]:
+    """Send an ARP request across `subnet`. Returns a list of {ip, mac}, or an {"error": ...} dict."""
     try:
         ipaddress.IPv4Network(subnet, strict=False)
     except ValueError as e:
@@ -204,15 +246,70 @@ def arp_scan(subnet: str, timeout_seconds: int = 3) -> dict[str, Any]:
             "run this process as root or grant CAP_NET_RAW "
             "(e.g. `sudo setcap cap_net_raw+ep $(readlink -f $(which python3))`)"
         }
-    except Exception as e:  # scapy raises varied OS-level errors
+    except Exception as e:  # noqa: BLE001 - scapy raises varied OS-level errors
         return {"error": str(e)}
 
-    devices = [
-        {"ip": received.psrc, "mac": received.hwsrc}
-        for _sent, received in answered
-    ]
+    devices = [{"ip": received.psrc, "mac": received.hwsrc} for _sent, received in answered]
     devices.sort(key=lambda d: tuple(int(o) for o in d["ip"].split(".")))
-    return {"subnet": subnet, "devices": devices}
+    return devices
+
+
+@mcp.tool()
+def arp_scan(subnet: str, timeout_seconds: int = 3) -> dict[str, Any]:
+    """Discover live hosts on the local subnet via ARP requests, returning
+    IP and MAC address for each responder. More reliable than ping on a
+    LAN since it works even when hosts block ICMP.
+    Requires scapy and typically root/CAP_NET_RAW privileges to send raw
+    ARP frames. `subnet` must be CIDR notation, e.g. '192.168.1.0/24'."""
+    found = _arp_discover(subnet, timeout_seconds)
+    if isinstance(found, dict):
+        return found
+    return {"subnet": subnet, "devices": found}
+
+
+@mcp.tool()
+def discover_devices(
+    subnet: str,
+    timeout_seconds: int = 3,
+    probe_ports: bool = False,
+    port_timeout_seconds: float = 0.5,
+) -> dict[str, Any]:
+    """Discover devices on the local subnet and enrich each one with
+    whatever identifying info can be gathered: MAC address, vendor
+    (looked up from the MAC's OUI), reverse-DNS hostname, and
+    (optionally) a quick scan of common ports as a hint at the kind of
+    device. Runs the same ARP scan as `arp_scan` under the hood, then
+    does per-host lookups. `subnet` must be CIDR notation, e.g.
+    '192.168.1.0/24'. Requires scapy and typically root/CAP_NET_RAW,
+    same as arp_scan. Set `probe_ports=True` to also port-scan each
+    device (slower on large subnets: it runs one host at a time).
+    Only scan networks you own or are authorized to test."""
+    found = _arp_discover(subnet, timeout_seconds)
+    if isinstance(found, dict):
+        return found
+
+    devices: list[dict[str, Any]] = []
+    for entry in found:
+        ip = entry["ip"]
+        mac = entry["mac"]
+        device: dict[str, Any] = {
+            "ip": ip,
+            "mac": mac,
+            "hostname": _reverse_dns(ip),
+            "vendor": _mac_vendor(mac),
+        }
+        if probe_ports:
+            device["open_ports"] = _scan_open_ports(
+                ip, list(COMMON_PORTS.keys()), port_timeout_seconds, max_workers=len(COMMON_PORTS)
+            )
+        devices.append(device)
+
+    return {
+        "subnet": subnet,
+        "device_count": len(devices),
+        "probed_ports": probe_ports,
+        "devices": devices,
+    }
 
 
 @mcp.tool()
@@ -232,26 +329,8 @@ def port_scan(
         return {"error": f"could not resolve host '{host}': {e}"}
 
     target_ports = ports if ports is not None else list(COMMON_PORTS.keys())
+    open_ports = _scan_open_ports(resolved_ip, target_ports, timeout_seconds, max_workers)
 
-    def check_port(port: int) -> tuple[int, bool]:
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-            sock.settimeout(timeout_seconds)
-            result = sock.connect_ex((resolved_ip, port))
-            return port, result == 0
-
-    open_ports: list[dict[str, Any]] = []
-    with ThreadPoolExecutor(max_workers=max_workers) as pool:
-        futures = [pool.submit(check_port, p) for p in target_ports]
-        for future in as_completed(futures):
-            port, is_open = future.result()
-            if is_open:
-                try:
-                    service = socket.getservbyport(port)
-                except OSError:
-                    service = COMMON_PORTS.get(port, "unknown")
-                open_ports.append({"port": port, "service": service})
-
-    open_ports.sort(key=lambda p: p["port"])
     return {
         "host": host,
         "resolved_ip": resolved_ip,
@@ -307,6 +386,67 @@ def nmap_scan(
             "state": host_info.state(),
             "hostnames": [h.get("name") for h in host_info.get("hostnames", [])],
             "ports": sorted(ports, key=lambda p: p["port"]),
+        }
+
+    return {"target": target, "arguments": arguments, "hosts": results}
+
+
+@mcp.tool()
+def nmap_os_scan(
+    target: str,
+    arguments: str = "-O",
+) -> dict[str, Any]:
+    """Run an nmap OS-detection scan against a host or subnet using the
+    system nmap binary, and return the guessed OS matches per host
+    (name, accuracy, OS class/family/generation). `target` can be a
+    single IP, hostname, or CIDR range. `arguments` are extra nmap flags
+    (defaults to just OS detection).
+    OS detection sends raw packets and needs the *nmap binary itself* to
+    run as root or have CAP_NET_RAW/CAP_NET_ADMIN (granting the calling
+    Python process CAP_NET_RAW is not enough, since nmap runs as a
+    separate subprocess); without that, nmap reports a permission error
+    per host rather than failing the whole scan.
+    Only scan networks/hosts you are authorized to scan."""
+    if NMAP_PATH is None:
+        return {"error": "nmap binary not found on PATH"}
+
+    try:
+        import nmap
+    except ImportError as e:
+        return {"error": f"python-nmap not available: {e}"}
+
+    scanner = nmap.PortScanner(nmap_search_path=(NMAP_PATH,))
+    try:
+        scanner.scan(hosts=target, arguments=arguments)
+    except nmap.PortScannerError as e:
+        return {"error": str(e)}
+
+    results: dict[str, Any] = {}
+    for host in scanner.all_hosts():
+        host_info = scanner[host]
+        osmatches: list[dict[str, Any]] = []
+        for match in host_info.get("osmatch", []):
+            osmatches.append(
+                {
+                    "name": match.get("name"),
+                    "accuracy": match.get("accuracy"),
+                    "osclass": [
+                        {
+                            "type": c.get("type"),
+                            "vendor": c.get("vendor"),
+                            "osfamily": c.get("osfamily"),
+                            "osgen": c.get("osgen"),
+                            "accuracy": c.get("accuracy"),
+                        }
+                        for c in match.get("osclass", [])
+                    ],
+                }
+            )
+        results[host] = {
+            "state": host_info.state(),
+            "hostnames": [h.get("name") for h in host_info.get("hostnames", [])],
+            "osmatches": osmatches,
+            "fingerprint": host_info.get("fingerprint"),
         }
 
     return {"target": target, "arguments": arguments, "hosts": results}
