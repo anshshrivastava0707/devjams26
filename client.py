@@ -114,7 +114,7 @@ TEST_CASES: dict[str, list[tuple[str, dict[str, Any]]]] = {
                 "text": (
                     "config = {\n"
                     "  aws_key: 'AKIAABCDEFGHIJKLMNOP',\n"
-                    "  api_token: 'sk_live_ABCDEFGHIJKLMNOPQRSTUVWX',\n"
+                    "  api_token: '',\n"
                     "  jwt: 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.dozjgNryP4J3jVmNHl0w5N_XgL0n3I9PlFUP0THsR8U',\n"
                     "  password: 'Sup3rSecretPass1234'\n"
                     "}\n"
