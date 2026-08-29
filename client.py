@@ -1,31 +1,39 @@
 """
-Test client for the network-scanner MCP server (server.py).
+Client for the network-scanner MCP server (server.py). Two modes:
 
-Launches server.py as a subprocess over stdio, discovers every tool it
-exposes, and calls each one against this machine's real local network
-(gateway/subnet from list_network_interfaces / get_default_gateway).
-Only scan networks you own or are authorized to test. Prints a PASS/FAIL
-report per call and a final summary.
+  .venv/bin/python client.py            interactive LangChain agent chat,
+                                         bound to every tool this server
+                                         exposes (needs GOOGLE_API_KEY in .env)
+  .venv/bin/python client.py --verify   fixed regression run: calls every
+                                         tool with known-good arguments
+                                         against this machine's real local
+                                         network, writes client_output.txt
 
-This script only *reports* failures — it does not attempt to fix the
-server if a tool errors out.
-
-Run with:
-    .venv/bin/python client.py
+Only point either mode at networks/hosts you own or are authorized to test.
+--verify only *reports* failures - it does not attempt to fix the server if
+a tool errors out.
 """
 
 from __future__ import annotations
 
 import asyncio
 import json
+import os
 import sys
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from dotenv import load_dotenv
+from langchain.agents import create_agent
+from langchain_core.tools import StructuredTool
+from langchain_google_genai import ChatGoogleGenerativeAI
 from mcp.client import Client
 from mcp.client.stdio import StdioServerParameters
+
+load_dotenv(Path(__file__).parent / ".env")
 
 SERVER_SCRIPT = Path(__file__).parent / "server.py"
 PYTHON = sys.executable
@@ -64,6 +72,65 @@ TEST_CASES: dict[str, list[tuple[str, dict[str, Any]]]] = {
     ],
     "port_scan": [
         ("gateway common ports", {"host": REAL_GATEWAY, "timeout_seconds": 1.0}),
+    ],
+    "tls_scan": [
+        ("gateway :443", {"host": REAL_GATEWAY, "port": 443, "timeout_seconds": 5.0}),
+    ],
+    "http_header_audit": [
+        ("gateway :80", {"host": REAL_GATEWAY, "port": 80, "timeout_seconds": 5.0}),
+        ("gateway :443", {"host": REAL_GATEWAY, "port": 443, "timeout_seconds": 5.0}),
+    ],
+    "check_exposed_paths": [
+        ("gateway :80", {"host": REAL_GATEWAY, "port": 80, "timeout_seconds": 5.0}),
+    ],
+    "check_unauthenticated_services": [
+        (
+            "gateway default probe ports",
+            {"host": REAL_GATEWAY, "timeout_seconds": 3.0},
+        ),
+    ],
+    "check_cleartext_auth": [
+        (
+            "gateway default probe ports",
+            {"host": REAL_GATEWAY, "timeout_seconds": 3.0},
+        ),
+    ],
+    "epss_lookup": [
+        (
+            "real CVEs: Log4Shell (high EPSS) + Apache 2.4.6 DoS (low EPSS)",
+            {"cve_ids": ["CVE-2021-44228", "CVE-2013-4352"]},
+        ),
+    ],
+    "kev_lookup": [
+        (
+            "real CVEs: Log4Shell (in KEV) + Apache 2.4.6 DoS (not in KEV)",
+            {"cve_ids": ["CVE-2021-44228", "CVE-2013-4352"]},
+        ),
+    ],
+    "secret_scan": [
+        (
+            "synthetic text blob with fake secrets",
+            {
+                "text": (
+                    "config = {\n"
+                    "  aws_key: 'AKIAABCDEFGHIJKLMNOP',\n"
+                    "  api_token: 'sk_live_ABCDEFGHIJKLMNOPQRSTUVWX',\n"
+                    "  jwt: 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.dozjgNryP4J3jVmNHl0w5N_XgL0n3I9PlFUP0THsR8U',\n"
+                    "  password: 'Sup3rSecretPass1234'\n"
+                    "}\n"
+                ),
+            },
+        ),
+    ],
+    # DNS TXT lookups are public by design (every receiving mail server does
+    # this automatically) - no authorization concern, unlike LAN scanning.
+    "email_auth_audit": [
+        ("google.com", {"domain": "google.com", "timeout_seconds": 5.0}),
+    ],
+    # jquery.com's own homepage is a stable, genuinely public page that loads
+    # jQuery via <script src> - a real end-to-end fetch/parse/identify test.
+    "js_library_audit": [
+        ("jquery.com homepage", {"url": "https://jquery.com/", "timeout_seconds": 10.0}),
     ],
     "nmap_scan": [
         ("gateway -sV -T4", {"target": REAL_GATEWAY, "arguments": "-sV -T4"}),
@@ -145,7 +212,7 @@ def format_report(results: list[CaseResult]) -> str:
     return "\n".join(lines)
 
 
-async def main() -> int:
+async def run_verification() -> int:
     params = StdioServerParameters(command=PYTHON, args=[str(SERVER_SCRIPT)])
 
     results: list[CaseResult] = []
@@ -201,5 +268,127 @@ async def main() -> int:
     return 1 if failed else 0
 
 
+AGENT_SYSTEM_PROMPT = (
+    "You are a network security assistant with access to a set of local-network "
+    "scanning and analysis tools over MCP. Each tool's own description documents "
+    "specific safety constraints (e.g. 'use sparingly', 'only scan hosts you are "
+    "authorized to test', rate limits) - follow them exactly, don't call a tool "
+    "just because it exists. Before running any active scan (subnet sweeps, "
+    "ARP/port/nmap scans, unauthenticated-service or cleartext-auth checks) "
+    "against a target the user hasn't already named, confirm with the user that "
+    "they own or are authorized to test it. Never guess or brute-force "
+    "credentials. Prefer the least invasive tool that answers the question, and "
+    "explain findings in plain language rather than dumping raw JSON.\n\n"
+    "Users will describe what they want in everyday language, not tool names - "
+    "translate intent to the right tool(s) yourself. Rough guide:\n"
+    "- 'what's my network/subnet/IP' -> list_network_interfaces, get_default_gateway\n"
+    "- 'what devices/hosts are on my network' -> ping_sweep or arp_scan (arp_scan is "
+    "more reliable on a LAN); use discover_devices when they also want hostnames/"
+    "vendor/device-type hints\n"
+    "- 'is <host> up/reachable' -> ping_host; 'resolve/lookup this domain or IP' -> "
+    "resolve_hostname\n"
+    "- 'what ports/services are open on <host>' -> port_scan for a quick check, "
+    "nmap_scan when they want service/version detail\n"
+    "- 'what OS is <host> running' -> nmap_os_scan (warn them it needs root/"
+    "CAP_NET_RAW and may fail without it)\n"
+    "- 'is my site's SSL/TLS/certificate okay' -> tls_scan\n"
+    "- 'are my security headers set up right' / 'is my site missing CSP/HSTS/etc' -> "
+    "http_header_audit\n"
+    "- 'do I have anything sensitive exposed' (.git, .env, backups, etc.) -> "
+    "check_exposed_paths; if they want it checked for leaked keys/secrets too, "
+    "call it with fetch_body=True and feed the body into secret_scan\n"
+    "- 'is <text/config/file content> leaking any secrets or API keys' -> "
+    "secret_scan\n"
+    "- 'do I have any databases/caches open without a password' (Redis, "
+    "Elasticsearch, Memcached, anonymous FTP) -> check_unauthenticated_services\n"
+    "- 'are any of my services sending passwords in plaintext' (Telnet, FTP, HTTP "
+    "Basic Auth over http) -> check_cleartext_auth\n"
+    "- 'is my domain protected against email spoofing/phishing' (SPF/DMARC/DKIM) -> "
+    "email_auth_audit\n"
+    "- 'are the JS libraries on my site outdated/vulnerable' -> js_library_audit\n"
+    "- 'is this CVE serious/likely to be exploited' -> epss_lookup (probability of "
+    "exploitation) and kev_lookup (confirmed active exploitation); use both together "
+    "for a fuller picture rather than either alone\n"
+    "When a request is broad ('audit my network', 'check my site's security'), chain "
+    "several of the above rather than picking just one, and say up front which "
+    "checks you're about to run."
+)
+
+
+def build_langchain_tools(client: Client, mcp_tools: list[Any]) -> list[StructuredTool]:
+    """Wrap each MCP tool as a LangChain StructuredTool that calls it over `client`.
+
+    Each call's raw result is printed to the user as soon as it comes back, verbatim -
+    that's the ground truth from the tool, not a paraphrase. The same raw result is also
+    returned to the agent so it can still chain tool calls on precise data (e.g.
+    check_exposed_paths' body -> secret_scan) and hold a conversation about it.
+    """
+
+    def make_coroutine(tool_name: str) -> Callable[..., Any]:
+        async def _call(**kwargs: Any) -> Any:
+            result = await client.call_tool(tool_name, kwargs)
+            raw = {"error": _extract_text(result.content)} if result.is_error else result.structured_content
+            print(f"\n[{tool_name}] {json.dumps(raw, indent=2, default=str)}\n")
+            return raw
+
+        return _call
+
+    return [
+        StructuredTool.from_function(
+            coroutine=make_coroutine(tool.name),
+            name=tool.name,
+            description=tool.description or tool.name,
+            args_schema=tool.input_schema,
+        )
+        for tool in mcp_tools
+    ]
+
+
+async def run_agent_chat() -> None:
+    if not os.environ.get("GOOGLE_API_KEY"):
+        print(
+            "GOOGLE_API_KEY is not set. Add it to .env (copy .env.example) and re-run.\n"
+            "The fixed regression run doesn't need it: .venv/bin/python client.py --verify"
+        )
+        return
+
+    model_name = os.environ.get("GEMINI_MODEL") or "gemini-2.5-flash"
+    params = StdioServerParameters(command=PYTHON, args=[str(SERVER_SCRIPT)])
+
+    async with Client(params) as client:
+        listing = await client.list_tools()
+        model = ChatGoogleGenerativeAI(model=model_name)
+        tools = build_langchain_tools(client, listing.tools)
+        print(f"Connected to server. {len(tools)} tools available to the agent: {', '.join(t.name for t in tools)}\n")
+
+        agent = create_agent(model, tools, system_prompt=AGENT_SYSTEM_PROMPT)
+
+        print(f"Chatting with the agent (model={model_name}). Type 'exit' or Ctrl+D to quit.\n")
+        messages: list[Any] = []
+        while True:
+            try:
+                user_input = input("you> ").strip()
+            except (EOFError, KeyboardInterrupt):
+                print()
+                break
+            if not user_input:
+                continue
+            if user_input.lower() in {"exit", "quit"}:
+                break
+
+            messages.append({"role": "user", "content": user_input})
+            try:
+                result = await agent.ainvoke({"messages": messages})
+            except Exception as exc:  # noqa: BLE001 - keep the chat loop alive on any agent-turn failure
+                print(f"agent error: {exc!r}\n")
+                messages.pop()
+                continue
+
+            messages = result["messages"]
+            print(f"agent> {messages[-1].content}\n")
+
+
 if __name__ == "__main__":
-    raise SystemExit(asyncio.run(main()))
+    if "--verify" in sys.argv[1:]:
+        raise SystemExit(asyncio.run(run_verification()))
+    asyncio.run(run_agent_chat())

@@ -1,5 +1,5 @@
 MCP network-scanner tool test results
-Generated: 2026-08-29T06:30:37.049355+00:00
+Generated: 2026-08-29T17:05:58.616140+00:00
 Server: /home/ansh-shrivastava/Documents/python/hackathon/server.py
 Target: gateway=172.18.224.1 subnet=172.18.224.0/20
 
@@ -17,80 +17,44 @@ output:
       "mac": "00:15:17:b4:b1:dd"
     },
     {
-      "ip": "172.18.224.2",
-      "mac": "f8:3d:c6:ad:48:ae"
-    },
-    {
       "ip": "172.18.224.4",
       "mac": "a8:e2:91:b2:23:f0"
+    },
+    {
+      "ip": "172.18.224.5",
+      "mac": "f8:3d:c6:d8:23:de"
+    },
+    {
+      "ip": "172.18.224.7",
+      "mac": "44:e5:17:f8:7d:f2"
+    },
+    {
+      "ip": "172.18.224.10",
+      "mac": "36:b2:75:84:50:cc"
     },
     {
       "ip": "172.18.224.17",
       "mac": "44:a3:bb:02:0e:8b"
     },
     {
-      "ip": "172.18.224.24",
-      "mac": "b8:82:f2:87:24:19"
+      "ip": "172.18.224.22",
+      "mac": "90:e8:68:b8:13:7f"
     },
     {
-      "ip": "172.18.224.30",
-      "mac": "c0:a8:10:eb:84:58"
-    },
-    {
-      "ip": "172.18.224.31",
-      "mac": "0e:7d:82:94:62:28"
-    },
-    {
-      "ip": "172.18.224.32",
-      "mac": "20:58:43:b9:d6:1c"
-    },
-    {
-      "ip": "172.18.224.37",
-      "mac": "24:b2:b9:7d:79:07"
-    },
-    {
-      "ip": "172.18.224.43",
-      "mac": "4a:c8:1f:67:74:70"
-    },
-    {
-      "ip": "172.18.224.45",
-      "mac": "16:ba:e3:9e:23:40"
-    },
-    {
-      "ip": "172.18.224.52",
-      "mac": "94:bb:43:4f:9e:48"
+      "ip": "172.18.224.33",
+      "mac": "3a:df:ae:93:41:1a"
     },
     {
       "ip": "172.18.224.58",
       "mac": "14:b5:cd:85:ff:95"
     },
     {
-      "ip": "172.18.224.61",
-      "mac": "94:bb:43:c1:2a:38"
-    },
-    {
-      "ip": "172.18.224.64",
-      "mac": "50:bb:b5:5e:9a:ba"
-    },
-    {
-      "ip": "172.18.224.65",
-      "mac": "3c:22:fb:8d:45:95"
+      "ip": "172.18.224.71",
+      "mac": "94:bb:43:ae:91:5f"
     },
     {
       "ip": "172.18.224.73",
       "mac": "8c:8b:5b:02:b0:55"
-    },
-    {
-      "ip": "172.18.224.76",
-      "mac": "94:bb:43:0e:23:df"
-    },
-    {
-      "ip": "172.18.224.78",
-      "mac": "70:08:94:c6:09:39"
-    },
-    {
-      "ip": "172.18.224.79",
-      "mac": "44:a3:bb:17:3e:96"
     },
     {
       "ip": "172.18.224.82",
@@ -101,610 +65,333 @@ output:
       "mac": "38:8d:3d:1f:c3:ea"
     },
     {
-      "ip": "172.18.224.84",
-      "mac": "14:b5:cd:5a:15:2f"
+      "ip": "172.18.224.89",
+      "mac": "00:e9:3a:90:32:69"
     },
     {
-      "ip": "172.18.224.85",
-      "mac": "f0:68:e3:cc:be:f6"
+      "ip": "172.18.224.91",
+      "mac": "14:b5:cd:b9:e9:d9"
     },
     {
-      "ip": "172.18.224.87",
-      "mac": "3c:9c:0f:2a:09:0e"
-    },
-    {
-      "ip": "172.18.224.90",
-      "mac": "c0:b8:83:54:46:6a"
-    },
-    {
-      "ip": "172.18.224.94",
-      "mac": "7e:aa:74:a4:f3:55"
-    },
-    {
-      "ip": "172.18.224.97",
-      "mac": "10:68:38:81:84:78"
-    },
-    {
-      "ip": "172.18.224.110",
-      "mac": "54:14:f3:ac:47:89"
+      "ip": "172.18.224.109",
+      "mac": "2a:0d:f9:e5:e6:8d"
     },
     {
       "ip": "172.18.224.112",
       "mac": "46:51:92:2f:69:15"
     },
     {
-      "ip": "172.18.224.114",
-      "mac": "f8:3d:c6:08:5e:fc"
-    },
-    {
       "ip": "172.18.224.121",
-      "mac": "1c:ce:51:ff:e2:96"
+      "mac": "26:3a:9c:67:e5:d1"
     },
     {
-      "ip": "172.18.224.169",
-      "mac": "50:2e:91:29:f6:72"
+      "ip": "172.18.224.217",
+      "mac": "4c:49:6c:8a:f0:ac"
     },
     {
-      "ip": "172.18.224.170",
-      "mac": "74:40:bb:80:28:75"
-    },
-    {
-      "ip": "172.18.224.172",
-      "mac": "3c:91:80:7f:c8:19"
-    },
-    {
-      "ip": "172.18.224.175",
-      "mac": "08:f9:7e:a2:dc:1d"
-    },
-    {
-      "ip": "172.18.224.179",
-      "mac": "50:2e:91:15:c7:24"
-    },
-    {
-      "ip": "172.18.224.180",
-      "mac": "00:41:0e:69:ff:0f"
-    },
-    {
-      "ip": "172.18.224.184",
-      "mac": "00:d4:9e:90:d3:14"
-    },
-    {
-      "ip": "172.18.224.185",
-      "mac": "ec:63:d7:c5:3b:b8"
-    },
-    {
-      "ip": "172.18.224.186",
-      "mac": "04:68:74:65:6e:37"
-    },
-    {
-      "ip": "172.18.224.191",
-      "mac": "94:e9:79:dc:46:4b"
-    },
-    {
-      "ip": "172.18.224.192",
-      "mac": "24:b2:b9:55:d0:73"
-    },
-    {
-      "ip": "172.18.224.193",
-      "mac": "b4:6b:fc:dc:9e:d4"
-    },
-    {
-      "ip": "172.18.224.200",
-      "mac": "14:b5:cd:ba:b9:ab"
-    },
-    {
-      "ip": "172.18.224.201",
-      "mac": "1c:ce:51:ff:e8:d6"
-    },
-    {
-      "ip": "172.18.224.203",
-      "mac": "1c:70:c9:d1:6f:5a"
-    },
-    {
-      "ip": "172.18.224.204",
-      "mac": "98:5f:41:58:ae:a3"
-    },
-    {
-      "ip": "172.18.224.206",
-      "mac": "14:b5:cd:cc:47:5b"
-    },
-    {
-      "ip": "172.18.224.211",
-      "mac": "98:fe:3e:4b:f3:6b"
-    },
-    {
-      "ip": "172.18.224.213",
-      "mac": "20:c1:9b:c2:07:bd"
-    },
-    {
-      "ip": "172.18.224.214",
-      "mac": "04:68:74:28:9a:dd"
-    },
-    {
-      "ip": "172.18.224.222",
-      "mac": "f4:4e:b4:1c:2f:57"
-    },
-    {
-      "ip": "172.18.224.223",
-      "mac": "1c:bf:c0:91:4a:11"
-    },
-    {
-      "ip": "172.18.224.230",
-      "mac": "74:04:f1:03:47:a1"
-    },
-    {
-      "ip": "172.18.224.233",
-      "mac": "3c:0a:f3:8b:9f:bd"
-    },
-    {
-      "ip": "172.18.224.243",
-      "mac": "b8:f7:75:4f:be:1f"
-    },
-    {
-      "ip": "172.18.224.248",
-      "mac": "10:68:38:0d:65:38"
-    },
-    {
-      "ip": "172.18.224.249",
-      "mac": "c0:bf:be:87:07:a6"
-    },
-    {
-      "ip": "172.18.225.15",
-      "mac": "c0:bf:be:68:18:4c"
-    },
-    {
-      "ip": "172.18.225.19",
-      "mac": "1a:68:de:6d:b3:a8"
-    },
-    {
-      "ip": "172.18.225.21",
-      "mac": "4c:23:38:31:48:c1"
-    },
-    {
-      "ip": "172.18.225.28",
-      "mac": "ba:26:b1:2d:d9:a9"
-    },
-    {
-      "ip": "172.18.225.54",
-      "mac": "fe:4f:a7:46:d9:05"
-    },
-    {
-      "ip": "172.18.225.55",
-      "mac": "5a:b6:70:84:38:31"
-    },
-    {
-      "ip": "172.18.225.59",
-      "mac": "c8:cb:9e:cc:c9:3c"
-    },
-    {
-      "ip": "172.18.225.65",
-      "mac": "60:ff:9e:bb:2b:e8"
-    },
-    {
-      "ip": "172.18.225.66",
-      "mac": "c8:a3:e8:cd:84:6f"
-    },
-    {
-      "ip": "172.18.225.71",
-      "mac": "58:02:05:81:d2:5c"
-    },
-    {
-      "ip": "172.18.225.79",
-      "mac": "d8:fc:93:b4:bb:f3"
-    },
-    {
-      "ip": "172.18.225.81",
-      "mac": "38:8d:3d:50:65:c6"
-    },
-    {
-      "ip": "172.18.225.82",
-      "mac": "f8:a2:d6:70:a5:77"
-    },
-    {
-      "ip": "172.18.225.83",
-      "mac": "44:f7:9f:5c:dd:e9"
-    },
-    {
-      "ip": "172.18.225.87",
-      "mac": "08:d2:3e:be:6d:60"
-    },
-    {
-      "ip": "172.18.225.91",
-      "mac": "0c:79:55:d6:03:bc"
-    },
-    {
-      "ip": "172.18.225.97",
-      "mac": "e8:c7:cf:b1:44:ce"
-    },
-    {
-      "ip": "172.18.225.104",
-      "mac": "50:c2:e8:0b:be:ff"
-    },
-    {
-      "ip": "172.18.225.105",
-      "mac": "e8:65:38:3e:e4:17"
-    },
-    {
-      "ip": "172.18.225.108",
-      "mac": "9e:97:96:72:82:70"
-    },
-    {
-      "ip": "172.18.225.109",
-      "mac": "a4:83:e7:69:3d:0e"
-    },
-    {
-      "ip": "172.18.225.113",
-      "mac": "04:f0:ee:0a:64:c3"
+      "ip": "172.18.224.240",
+      "mac": "24:b2:b9:70:7b:df"
     },
     {
       "ip": "172.18.225.119",
       "mac": "1c:ce:51:fd:d6:7a"
     },
     {
-      "ip": "172.18.225.120",
-      "mac": "04:68:74:2a:6f:51"
+      "ip": "172.18.227.5",
+      "mac": "90:65:84:47:96:c7"
     },
     {
-      "ip": "172.18.225.121",
-      "mac": "2c:db:07:d0:01:9c"
+      "ip": "172.18.227.7",
+      "mac": "dc:97:ba:26:cb:63"
     },
     {
-      "ip": "172.18.225.124",
-      "mac": "da:f6:b2:3b:e9:86"
+      "ip": "172.18.227.38",
+      "mac": "d8:b3:2f:c7:b0:8b"
     },
     {
-      "ip": "172.18.225.129",
-      "mac": "c8:e2:65:7e:52:9d"
-    },
-    {
-      "ip": "172.18.225.132",
-      "mac": "34:41:5d:93:59:db"
-    },
-    {
-      "ip": "172.18.225.136",
-      "mac": "50:bb:b5:44:79:38"
-    },
-    {
-      "ip": "172.18.225.138",
-      "mac": "80:c0:1e:2f:26:d7"
-    },
-    {
-      "ip": "172.18.225.139",
-      "mac": "50:2e:91:17:b6:ec"
-    },
-    {
-      "ip": "172.18.225.140",
-      "mac": "f0:20:ff:d6:f7:9a"
-    },
-    {
-      "ip": "172.18.225.148",
-      "mac": "38:87:d5:dd:1e:36"
-    },
-    {
-      "ip": "172.18.225.151",
-      "mac": "04:6c:59:1b:cc:a4"
-    },
-    {
-      "ip": "172.18.225.155",
-      "mac": "a8:7e:ea:9a:c9:96"
-    },
-    {
-      "ip": "172.18.225.157",
-      "mac": "84:9e:56:9a:04:5d"
-    },
-    {
-      "ip": "172.18.225.164",
-      "mac": "94:bb:43:c1:f7:9b"
-    },
-    {
-      "ip": "172.18.225.172",
-      "mac": "e4:0d:36:da:6f:bf"
-    },
-    {
-      "ip": "172.18.225.175",
-      "mac": "3e:33:35:80:79:87"
-    },
-    {
-      "ip": "172.18.225.184",
-      "mac": "16:08:d3:d8:74:06"
-    },
-    {
-      "ip": "172.18.225.192",
-      "mac": "38:7a:0e:6f:c9:c1"
-    },
-    {
-      "ip": "172.18.225.195",
-      "mac": "58:02:05:33:c1:fa"
-    },
-    {
-      "ip": "172.18.225.207",
-      "mac": "ca:fa:b7:5f:94:f4"
-    },
-    {
-      "ip": "172.18.225.208",
-      "mac": "14:f6:d8:23:a4:65"
-    },
-    {
-      "ip": "172.18.226.11",
-      "mac": "dc:41:a9:53:0d:13"
-    },
-    {
-      "ip": "172.18.226.18",
-      "mac": "3a:95:31:02:51:52"
-    },
-    {
-      "ip": "172.18.226.31",
-      "mac": "74:97:79:05:70:63"
-    },
-    {
-      "ip": "172.18.226.39",
-      "mac": "fa:ea:80:76:17:f7"
-    },
-    {
-      "ip": "172.18.226.55",
-      "mac": "3c:ef:a5:2d:14:eb"
-    },
-    {
-      "ip": "172.18.226.122",
-      "mac": "20:58:43:e6:93:56"
-    },
-    {
-      "ip": "172.18.226.163",
-      "mac": "f4:6a:dd:67:1d:91"
-    },
-    {
-      "ip": "172.18.226.196",
-      "mac": "50:bb:b5:44:fa:d0"
-    },
-    {
-      "ip": "172.18.226.255",
-      "mac": "38:8d:3d:78:0d:e8"
-    },
-    {
-      "ip": "172.18.227.20",
-      "mac": "b4:8c:9d:8e:67:f9"
-    },
-    {
-      "ip": "172.18.228.61",
-      "mac": "70:a8:d3:b7:7b:5e"
-    },
-    {
-      "ip": "172.18.228.159",
-      "mac": "a8:41:f4:e6:f5:77"
-    },
-    {
-      "ip": "172.18.228.207",
-      "mac": "be:b3:20:83:fb:ce"
-    },
-    {
-      "ip": "172.18.228.225",
-      "mac": "38:18:68:68:1e:51"
-    },
-    {
-      "ip": "172.18.229.59",
-      "mac": "f8:3d:c6:65:64:f2"
-    },
-    {
-      "ip": "172.18.229.77",
-      "mac": "28:cd:c4:c3:f3:73"
-    },
-    {
-      "ip": "172.18.229.87",
-      "mac": "f8:54:f6:b3:f5:8d"
-    },
-    {
-      "ip": "172.18.229.137",
-      "mac": "50:5a:65:c8:99:39"
-    },
-    {
-      "ip": "172.18.229.148",
-      "mac": "e6:8f:26:08:79:50"
-    },
-    {
-      "ip": "172.18.229.188",
-      "mac": "9c:c7:d3:2c:51:d8"
+      "ip": "172.18.229.72",
+      "mac": "dc:46:28:9e:0d:4a"
     },
     {
       "ip": "172.18.229.189",
       "mac": "0c:0f:d8:79:3a:c1"
     },
     {
-      "ip": "172.18.229.197",
-      "mac": "c4:03:a8:3c:2d:d2"
+      "ip": "172.18.231.136",
+      "mac": "28:c5:d2:2a:b0:02"
     },
     {
-      "ip": "172.18.229.201",
-      "mac": "50:c2:e8:33:93:37"
+      "ip": "172.18.231.174",
+      "mac": "8c:53:e6:dd:d9:ca"
     },
     {
-      "ip": "172.18.229.206",
-      "mac": "90:0f:0c:1e:da:0d"
+      "ip": "172.18.231.184",
+      "mac": "08:9d:f4:b6:3d:39"
     },
     {
-      "ip": "172.18.229.241",
-      "mac": "f8:54:f6:40:c9:91"
+      "ip": "172.18.232.4",
+      "mac": "74:13:ea:38:85:e2"
     },
     {
-      "ip": "172.18.230.65",
-      "mac": "50:bb:b5:44:6b:6c"
+      "ip": "172.18.232.89",
+      "mac": "f8:fe:5e:3a:d1:d5"
     },
     {
-      "ip": "172.18.230.123",
-      "mac": "e0:2e:0b:79:04:f0"
+      "ip": "172.18.232.144",
+      "mac": "e6:c4:c6:ac:4a:cf"
     },
     {
-      "ip": "172.18.230.238",
-      "mac": "70:08:94:82:e2:35"
+      "ip": "172.18.233.30",
+      "mac": "d0:65:78:a5:3c:e6"
     },
     {
-      "ip": "172.18.231.42",
-      "mac": "a8:59:5f:8a:54:cb"
-    },
-    {
-      "ip": "172.18.231.103",
-      "mac": "9c:c7:d3:64:b0:a0"
-    },
-    {
-      "ip": "172.18.231.237",
-      "mac": "da:ed:ec:a3:9b:52"
-    },
-    {
-      "ip": "172.18.231.242",
-      "mac": "e6:c1:cd:fa:c3:8d"
-    },
-    {
-      "ip": "172.18.231.249",
-      "mac": "dc:4b:a1:0c:47:96"
-    },
-    {
-      "ip": "172.18.232.35",
-      "mac": "e4:c7:67:e8:7e:ac"
-    },
-    {
-      "ip": "172.18.232.120",
-      "mac": "40:d1:33:de:cc:cc"
-    },
-    {
-      "ip": "172.18.232.164",
-      "mac": "20:58:43:1c:36:c2"
-    },
-    {
-      "ip": "172.18.233.23",
-      "mac": "20:0b:74:8f:a3:51"
-    },
-    {
-      "ip": "172.18.233.32",
-      "mac": "ec:4c:8c:9e:67:81"
-    },
-    {
-      "ip": "172.18.233.47",
-      "mac": "3c:58:c2:e8:59:0e"
-    },
-    {
-      "ip": "172.18.233.55",
-      "mac": "de:50:45:db:3c:3f"
-    },
-    {
-      "ip": "172.18.233.169",
-      "mac": "38:8d:3d:1d:5f:b0"
+      "ip": "172.18.233.77",
+      "mac": "2c:7b:a0:51:2f:93"
     },
     {
       "ip": "172.18.233.210",
       "mac": "28:2e:89:cd:7e:30"
     },
     {
-      "ip": "172.18.233.249",
-      "mac": "f8:54:f6:57:c4:2d"
+      "ip": "172.18.234.129",
+      "mac": "86:67:74:8a:42:2a"
     },
     {
-      "ip": "172.18.234.1",
-      "mac": "a2:50:14:46:39:ee"
+      "ip": "172.18.234.135",
+      "mac": "1c:ce:51:9a:41:34"
     },
     {
-      "ip": "172.18.234.57",
-      "mac": "a8:e2:91:ec:69:6c"
+      "ip": "172.18.234.143",
+      "mac": "f8:fe:5e:37:79:72"
     },
     {
-      "ip": "172.18.234.118",
-      "mac": "be:b0:7b:b0:e8:9a"
+      "ip": "172.18.234.153",
+      "mac": "4e:74:b9:46:6d:8e"
+    },
+    {
+      "ip": "172.18.234.161",
+      "mac": "94:bb:43:0c:f1:ad"
+    },
+    {
+      "ip": "172.18.234.165",
+      "mac": "28:0c:50:02:14:58"
     },
     {
       "ip": "172.18.234.195",
       "mac": "50:bb:b5:ab:26:1a"
     },
     {
-      "ip": "172.18.235.18",
-      "mac": "9c:c7:d3:42:9c:dc"
+      "ip": "172.18.234.211",
+      "mac": "6c:f6:da:49:c8:5c"
     },
     {
-      "ip": "172.18.235.22",
-      "mac": "0e:6c:92:d7:e6:f4"
+      "ip": "172.18.234.213",
+      "mac": "de:ed:07:ea:ec:bd"
     },
     {
-      "ip": "172.18.235.43",
-      "mac": "b0:47:e9:f4:86:ac"
+      "ip": "172.18.234.219",
+      "mac": "98:2c:bc:bd:58:df"
     },
     {
-      "ip": "172.18.235.116",
-      "mac": "c8:a3:e8:25:27:73"
+      "ip": "172.18.234.231",
+      "mac": "1c:ce:51:fd:d6:72"
     },
     {
-      "ip": "172.18.235.133",
-      "mac": "98:fe:3e:8d:12:9c"
+      "ip": "172.18.235.65",
+      "mac": "9e:d0:48:c3:ef:8c"
     },
     {
-      "ip": "172.18.235.138",
-      "mac": "c8:78:7d:6f:5a:41"
+      "ip": "172.18.235.232",
+      "mac": "70:08:94:b6:57:53"
     },
     {
-      "ip": "172.18.235.153",
-      "mac": "d4:1b:81:b0:e9:91"
+      "ip": "172.18.236.73",
+      "mac": "f8:54:f6:24:63:24"
     },
     {
-      "ip": "172.18.235.170",
-      "mac": "8a:d7:2d:ea:d7:2f"
+      "ip": "172.18.236.116",
+      "mac": "24:b2:b9:18:bb:bf"
     },
     {
-      "ip": "172.18.236.7",
-      "mac": "4c:b0:4a:00:84:03"
+      "ip": "172.18.236.120",
+      "mac": "b8:f7:75:05:30:98"
     },
     {
-      "ip": "172.18.236.12",
-      "mac": "c0:35:32:23:8a:d5"
+      "ip": "172.18.236.151",
+      "mac": "a2:61:74:e9:13:06"
     },
     {
-      "ip": "172.18.236.153",
-      "mac": "50:2e:91:67:9b:64"
+      "ip": "172.18.236.156",
+      "mac": "14:b5:cd:a6:04:17"
     },
     {
-      "ip": "172.18.236.184",
-      "mac": "74:12:b3:fe:5d:4d"
+      "ip": "172.18.236.164",
+      "mac": "ce:9a:3a:01:8f:67"
     },
     {
-      "ip": "172.18.236.251",
-      "mac": "5c:80:b6:3e:1d:04"
+      "ip": "172.18.237.9",
+      "mac": "60:ff:9e:46:66:84"
     },
     {
-      "ip": "172.18.237.74",
-      "mac": "56:33:46:7f:69:b0"
+      "ip": "172.18.237.11",
+      "mac": "48:e7:da:cc:4a:53"
     },
     {
-      "ip": "172.18.237.109",
-      "mac": "14:b5:cd:d0:eb:2b"
+      "ip": "172.18.237.66",
+      "mac": "c8:e2:65:6a:55:bd"
     },
     {
-      "ip": "172.18.237.145",
-      "mac": "40:1a:58:c0:29:e8"
+      "ip": "172.18.237.181",
+      "mac": "c0:bf:be:8b:1e:3e"
+    },
+    {
+      "ip": "172.18.237.198",
+      "mac": "b8:1e:a4:ea:73:1f"
+    },
+    {
+      "ip": "172.18.237.202",
+      "mac": "f0:68:e3:c4:54:a8"
+    },
+    {
+      "ip": "172.18.237.204",
+      "mac": "8c:8b:5b:86:21:c1"
+    },
+    {
+      "ip": "172.18.237.218",
+      "mac": "94:b6:09:4d:aa:a8"
+    },
+    {
+      "ip": "172.18.237.220",
+      "mac": "e2:4c:2e:0c:7b:f8"
+    },
+    {
+      "ip": "172.18.237.225",
+      "mac": "3a:fc:de:ca:0e:82"
     },
     {
       "ip": "172.18.237.228",
       "mac": "66:6a:63:1c:cb:d4"
     },
     {
-      "ip": "172.18.237.239",
-      "mac": "50:bb:b5:44:ca:fa"
+      "ip": "172.18.238.162",
+      "mac": "52:de:7c:4f:b0:23"
     },
     {
-      "ip": "172.18.238.44",
-      "mac": "e2:5a:c4:ce:d0:46"
+      "ip": "172.18.239.53",
+      "mac": "28:92:00:76:eb:6b"
     },
     {
-      "ip": "172.18.238.108",
-      "mac": "38:8d:3d:fe:04:32"
-    },
-    {
-      "ip": "172.18.238.117",
-      "mac": "c0:a8:10:bb:15:f7"
-    },
-    {
-      "ip": "172.18.238.210",
-      "mac": "be:b2:99:9d:d2:32"
-    },
-    {
-      "ip": "172.18.238.239",
-      "mac": "d8:32:e3:7c:f2:6f"
+      "ip": "172.18.239.234",
+      "mac": "f0:20:ff:d0:55:2f"
     }
   ]
+}
+
+======================================================================
+tool:      check_cleartext_auth
+case:      gateway default probe ports
+arguments: {"host": "172.18.224.1", "timeout_seconds": 3.0}
+status:    PASS
+output:
+{
+  "host": "172.18.224.1",
+  "resolved_ip": "172.18.224.1",
+  "checked_ports": [
+    21,
+    23,
+    80,
+    8080
+  ],
+  "findings": []
+}
+
+======================================================================
+tool:      check_exposed_paths
+case:      gateway :80
+arguments: {"host": "172.18.224.1", "port": 80, "timeout_seconds": 5.0}
+status:    PASS
+output:
+{
+  "host": "172.18.224.1",
+  "port": 80,
+  "scheme": "http",
+  "checked": [
+    {
+      "path": "/.git/config",
+      "error": "timed out"
+    },
+    {
+      "path": "/.git/HEAD",
+      "error": "timed out"
+    },
+    {
+      "path": "/.env",
+      "status": 302
+    },
+    {
+      "path": "/.svn/entries",
+      "status": 302
+    },
+    {
+      "path": "/.DS_Store",
+      "status": 302
+    },
+    {
+      "path": "/web.config",
+      "error": "timed out"
+    },
+    {
+      "path": "/docker-compose.yml",
+      "status": 302
+    },
+    {
+      "path": "/backup.zip",
+      "status": 302
+    },
+    {
+      "path": "/.well-known/security.txt",
+      "status": 302
+    }
+  ],
+  "exposed": []
+}
+
+======================================================================
+tool:      check_unauthenticated_services
+case:      gateway default probe ports
+arguments: {"host": "172.18.224.1", "timeout_seconds": 3.0}
+status:    PASS
+output:
+{
+  "host": "172.18.224.1",
+  "resolved_ip": "172.18.224.1",
+  "checked": [
+    {
+      "service": "ftp",
+      "port": 21,
+      "reachable": false,
+      "error": "[Errno 111] Connection refused"
+    },
+    {
+      "service": "redis",
+      "port": 6379,
+      "reachable": false,
+      "error": "[Errno 111] Connection refused"
+    },
+    {
+      "service": "elasticsearch",
+      "port": 9200,
+      "reachable": false,
+      "error": "timed out"
+    },
+    {
+      "service": "memcached",
+      "port": 11211,
+      "reachable": false,
+      "error": "[Errno 111] Connection refused"
+    }
+  ],
+  "skipped_ports_no_known_probe": []
 }
 
 ======================================================================
@@ -715,7 +402,7 @@ status:    PASS
 output:
 {
   "subnet": "172.18.224.0/20",
-  "device_count": 197,
+  "device_count": 97,
   "probed_ports": true,
   "devices": [
     {
@@ -723,28 +410,11 @@ output:
       "mac": "00:15:17:b4:b1:dd",
       "hostname": "_gateway",
       "vendor": "Intel Corporate",
-      "open_ports": [
-        {
-          "port": 25,
-          "service": "smtp"
-        },
-        {
-          "port": 53,
-          "service": "domain"
-        },
-        {
-          "port": 80,
-          "service": "http"
-        },
-        {
-          "port": 443,
-          "service": "https"
-        }
-      ]
+      "open_ports": []
     },
     {
-      "ip": "172.18.224.3",
-      "mac": "f6:a6:4d:40:2d:56",
+      "ip": "172.18.224.2",
+      "mac": "f8:3d:c6:ad:48:ae",
       "hostname": null,
       "vendor": null,
       "open_ports": []
@@ -764,59 +434,59 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.224.24",
-      "mac": "b8:82:f2:87:24:19",
+      "ip": "172.18.224.8",
+      "mac": "32:d0:ab:ea:2d:ea",
       "hostname": null,
       "vendor": null,
       "open_ports": []
     },
     {
-      "ip": "172.18.224.30",
-      "mac": "c0:a8:10:eb:84:58",
+      "ip": "172.18.224.10",
+      "mac": "36:b2:75:84:50:cc",
       "hostname": null,
       "vendor": null,
       "open_ports": []
     },
     {
-      "ip": "172.18.224.31",
-      "mac": "0e:7d:82:94:62:28",
+      "ip": "172.18.224.17",
+      "mac": "44:a3:bb:02:0e:8b",
+      "hostname": null,
+      "vendor": "Intel Corporate",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.224.33",
+      "mac": "3a:df:ae:93:41:1a",
       "hostname": null,
       "vendor": null,
       "open_ports": []
     },
     {
-      "ip": "172.18.224.32",
-      "mac": "20:58:43:b9:d6:1c",
+      "ip": "172.18.224.45",
+      "mac": "16:ba:e3:9e:23:40",
       "hostname": null,
       "vendor": null,
       "open_ports": []
     },
     {
-      "ip": "172.18.224.37",
-      "mac": "24:b2:b9:7d:79:07",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.43",
-      "mac": "4a:c8:1f:67:74:70",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.46",
-      "mac": "f4:6a:dd:8e:56:3b",
-      "hostname": null,
-      "vendor": "Liteon Technology Corporation",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.57",
-      "mac": "1c:ce:51:62:ea:29",
+      "ip": "172.18.224.52",
+      "mac": "94:bb:43:4f:9e:48",
       "hostname": null,
       "vendor": "AzureWave Technology Inc.",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.224.54",
+      "mac": "04:f0:ee:25:64:62",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.224.58",
+      "mac": "14:b5:cd:85:ff:95",
+      "hostname": null,
+      "vendor": null,
       "open_ports": []
     },
     {
@@ -827,23 +497,11 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.224.62",
-      "mac": "14:b5:cd:81:1a:d9",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
       "ip": "172.18.224.65",
       "mac": "3c:22:fb:8d:45:95",
       "hostname": null,
       "vendor": "Apple, Inc.",
-      "open_ports": [
-        {
-          "port": 5000,
-          "service": "dev-http"
-        }
-      ]
+      "open_ports": []
     },
     {
       "ip": "172.18.224.71",
@@ -853,52 +511,17 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.224.79",
-      "mac": "44:a3:bb:17:3e:96",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.84",
-      "mac": "14:b5:cd:5a:15:2f",
+      "ip": "172.18.224.73",
+      "mac": "8c:8b:5b:02:b0:55",
       "hostname": null,
       "vendor": null,
       "open_ports": []
     },
     {
-      "ip": "172.18.224.85",
-      "mac": "f0:68:e3:cc:be:f6",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.90",
-      "mac": "c0:b8:83:54:46:6a",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.97",
-      "mac": "10:68:38:81:84:78",
+      "ip": "172.18.224.74",
+      "mac": "94:bb:43:03:64:ef",
       "hostname": null,
       "vendor": "AzureWave Technology Inc.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.100",
-      "mac": "28:2e:89:67:1e:10",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.106",
-      "mac": "04:68:74:f9:ac:4d",
-      "hostname": null,
-      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
       "open_ports": [
         {
           "port": 3306,
@@ -907,10 +530,45 @@ output:
       ]
     },
     {
+      "ip": "172.18.224.76",
+      "mac": "94:bb:43:0e:23:df",
+      "hostname": null,
+      "vendor": "AzureWave Technology Inc.",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.224.82",
+      "mac": "c0:35:32:25:aa:4f",
+      "hostname": null,
+      "vendor": "Liteon Technology Corporation",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.224.83",
+      "mac": "38:8d:3d:1f:c3:ea",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.224.89",
+      "mac": "00:e9:3a:90:32:69",
+      "hostname": null,
+      "vendor": "AzureWave Technology Inc.",
+      "open_ports": []
+    },
+    {
       "ip": "172.18.224.108",
       "mac": "18:1d:ea:d8:3e:d9",
       "hostname": null,
       "vendor": "Intel Corporate",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.224.109",
+      "mac": "2a:0d:f9:e5:e6:8d",
+      "hostname": null,
+      "vendor": null,
       "open_ports": []
     },
     {
@@ -921,36 +579,31 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.224.114",
-      "mac": "f8:3d:c6:08:5e:fc",
+      "ip": "172.18.224.112",
+      "mac": "46:51:92:2f:69:15",
       "hostname": null,
       "vendor": null,
       "open_ports": []
     },
     {
       "ip": "172.18.224.121",
-      "mac": "1c:ce:51:ff:e2:96",
+      "mac": "26:3a:9c:67:e5:d1",
       "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": [
-        {
-          "port": 5900,
-          "service": "vnc"
-        }
-      ]
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.224.139",
+      "mac": "50:a6:d8:bd:9b:b1",
+      "hostname": null,
+      "vendor": "Apple, Inc.",
+      "open_ports": []
     },
     {
       "ip": "172.18.224.149",
       "mac": "82:ea:94:39:94:28",
       "hostname": null,
       "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.156",
-      "mac": "78:af:08:7c:8a:b7",
-      "hostname": null,
-      "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
@@ -968,68 +621,25 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.224.163",
-      "mac": "32:62:59:3b:3c:77",
+      "ip": "172.18.224.181",
+      "mac": "2c:7b:a0:65:11:2a",
       "hostname": null,
-      "vendor": null,
+      "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
-      "ip": "172.18.224.166",
-      "mac": "60:ff:9e:45:8e:04",
+      "ip": "172.18.224.183",
+      "mac": "e8:bf:b8:d2:05:05",
       "hostname": null,
-      "vendor": null,
+      "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
-      "ip": "172.18.224.169",
-      "mac": "50:2e:91:29:f6:72",
+      "ip": "172.18.224.199",
+      "mac": "00:41:0e:91:7e:8d",
       "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 3000,
-          "service": "dev-http"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.224.170",
-      "mac": "74:40:bb:80:28:75",
-      "hostname": null,
-      "vendor": "Hon Hai Precision Ind. Co.,Ltd.",
+      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
       "open_ports": []
-    },
-    {
-      "ip": "172.18.224.200",
-      "mac": "14:b5:cd:ba:b9:ab",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.201",
-      "mac": "1c:ce:51:ff:e8:d6",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": [
-        {
-          "port": 135,
-          "service": "epmap"
-        },
-        {
-          "port": 139,
-          "service": "netbios-ssn"
-        },
-        {
-          "port": 445,
-          "service": "microsoft-ds"
-        },
-        {
-          "port": 5900,
-          "service": "vnc"
-        }
-      ]
     },
     {
       "ip": "172.18.224.204",
@@ -1039,101 +649,18 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.224.206",
-      "mac": "14:b5:cd:cc:47:5b",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.211",
-      "mac": "98:fe:3e:4b:f3:6b",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.213",
-      "mac": "20:c1:9b:c2:07:bd",
+      "ip": "172.18.224.217",
+      "mac": "4c:49:6c:8a:f0:ac",
       "hostname": null,
       "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
-      "ip": "172.18.224.214",
-      "mac": "04:68:74:28:9a:dd",
-      "hostname": null,
-      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.219",
-      "mac": "46:82:00:ad:9f:0a",
+      "ip": "172.18.224.227",
+      "mac": "f0:68:e3:88:4e:b0",
       "hostname": null,
       "vendor": null,
       "open_ports": []
-    },
-    {
-      "ip": "172.18.224.221",
-      "mac": "38:8d:3d:42:fd:90",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.223",
-      "mac": "1c:bf:c0:91:4a:11",
-      "hostname": null,
-      "vendor": "Chongqing Fugui Electronics Co.,Ltd.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.228",
-      "mac": "18:93:41:65:68:c8",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.230",
-      "mac": "74:04:f1:03:47:a1",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.233",
-      "mac": "3c:0a:f3:8b:9f:bd",
-      "hostname": null,
-      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.234",
-      "mac": "d6:eb:1b:54:9e:b4",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.235",
-      "mac": "f8:0c:c8:a9:84:b6",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 135,
-          "service": "epmap"
-        },
-        {
-          "port": 139,
-          "service": "netbios-ssn"
-        },
-        {
-          "port": 445,
-          "service": "microsoft-ds"
-        }
-      ]
     },
     {
       "ip": "172.18.224.240",
@@ -1143,198 +670,45 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.224.243",
-      "mac": "b8:f7:75:4f:be:1f",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.245",
-      "mac": "a0:85:27:30:c2:30",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.224.248",
-      "mac": "10:68:38:0d:65:38",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": []
-    },
-    {
       "ip": "172.18.224.249",
       "mac": "c0:bf:be:87:07:a6",
       "hostname": null,
       "vendor": "AzureWave Technology Inc.",
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        }
-      ]
+      "open_ports": []
     },
     {
-      "ip": "172.18.224.252",
-      "mac": "50:2e:91:11:00:36",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 3000,
-          "service": "dev-http"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.225.0",
-      "mac": "b2:71:84:19:eb:14",
+      "ip": "172.18.224.251",
+      "mac": "c4:0f:08:2e:e6:e0",
       "hostname": null,
       "vendor": null,
       "open_ports": []
     },
     {
-      "ip": "172.18.225.8",
-      "mac": "a8:e2:91:e4:e2:62",
+      "ip": "172.18.225.5",
+      "mac": "a6:15:74:f2:79:81",
       "hostname": null,
       "vendor": null,
       "open_ports": []
     },
     {
-      "ip": "172.18.225.11",
-      "mac": "bc:d2:2c:08:f5:11",
+      "ip": "172.18.225.29",
+      "mac": "74:0e:a4:91:64:7e",
+      "hostname": null,
+      "vendor": "Apple, Inc.",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.225.58",
+      "mac": "f8:3d:c6:65:64:f2",
       "hostname": null,
       "vendor": null,
       "open_ports": []
     },
     {
-      "ip": "172.18.225.21",
-      "mac": "4c:23:38:31:48:c1",
-      "hostname": null,
-      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.28",
-      "mac": "ba:26:b1:2d:d9:a9",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.35",
-      "mac": "68:34:21:d4:d9:01",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.36",
-      "mac": "00:45:e2:86:e0:79",
+      "ip": "172.18.225.61",
+      "mac": "00:45:e2:ed:b8:85",
       "hostname": null,
       "vendor": "CyberTAN Technology Inc.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.37",
-      "mac": "40:c7:3c:cd:33:f9",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 8080,
-          "service": "http-alt"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.225.40",
-      "mac": "38:8d:3d:13:79:11",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.41",
-      "mac": "f8:3d:c6:d5:09:26",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.43",
-      "mac": "c0:35:32:de:5b:6f",
-      "hostname": null,
-      "vendor": "Liteon Technology Corporation",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.48",
-      "mac": "cc:6b:1e:5a:65:b9",
-      "hostname": null,
-      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.51",
-      "mac": "9c:c7:d3:95:44:dc",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.53",
-      "mac": "a4:97:b1:1d:c8:13",
-      "hostname": null,
-      "vendor": "Chongqing Fugui Electronics Co.,Ltd.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.54",
-      "mac": "fe:4f:a7:46:d9:05",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.59",
-      "mac": "c8:cb:9e:cc:c9:3c",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.64",
-      "mac": "60:ff:9e:4f:ce:d0",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.65",
-      "mac": "60:ff:9e:bb:2b:e8",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.225.71",
-      "mac": "58:02:05:81:d2:5c",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.76",
-      "mac": "cc:6b:1e:32:62:f9",
-      "hostname": null,
-      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
       "open_ports": []
     },
     {
@@ -1345,84 +719,6 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.225.82",
-      "mac": "f8:a2:d6:70:a5:77",
-      "hostname": null,
-      "vendor": "Liteon Technology Corporation",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.83",
-      "mac": "44:f7:9f:5c:dd:e9",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 135,
-          "service": "epmap"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.225.97",
-      "mac": "e8:c7:cf:b1:44:ce",
-      "hostname": null,
-      "vendor": "Wistron Neweb Corporation",
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.225.98",
-      "mac": "5e:18:85:3d:91:6f",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.104",
-      "mac": "50:c2:e8:0b:be:ff",
-      "hostname": null,
-      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.105",
-      "mac": "e8:65:38:3e:e4:17",
-      "hostname": null,
-      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.109",
-      "mac": "a4:83:e7:69:3d:0e",
-      "hostname": null,
-      "vendor": "Apple, Inc.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.112",
-      "mac": "00:21:6a:e6:31:79",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.118",
-      "mac": "da:1c:7b:5c:cc:30",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 5000,
-          "service": "dev-http"
-        }
-      ]
-    },
-    {
       "ip": "172.18.225.119",
       "mac": "1c:ce:51:fd:d6:7a",
       "hostname": null,
@@ -1430,235 +726,24 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.225.120",
-      "mac": "04:68:74:2a:6f:51",
+      "ip": "172.18.225.150",
+      "mac": "40:1a:58:6e:57:85",
       "hostname": null,
-      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
+      "vendor": "Wistron Neweb Corporation",
       "open_ports": []
     },
     {
-      "ip": "172.18.225.121",
-      "mac": "2c:db:07:d0:01:9c",
+      "ip": "172.18.225.243",
+      "mac": "a8:93:4a:9c:c2:28",
       "hostname": null,
-      "vendor": "Intel Corporate",
+      "vendor": "Chongqing Fugui Electronics Co.,Ltd.",
       "open_ports": []
     },
     {
-      "ip": "172.18.225.125",
-      "mac": "68:c6:ac:35:e2:5b",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.129",
-      "mac": "c8:e2:65:7e:52:9d",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.131",
-      "mac": "74:13:ea:16:fb:b1",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.132",
-      "mac": "34:41:5d:93:59:db",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.225.136",
-      "mac": "50:bb:b5:44:79:38",
+      "ip": "172.18.226.2",
+      "mac": "fe:51:7d:7f:a8:23",
       "hostname": null,
       "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.137",
-      "mac": "14:b5:cd:78:e8:f7",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.138",
-      "mac": "80:c0:1e:2f:26:d7",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.139",
-      "mac": "50:2e:91:17:b6:ec",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.225.140",
-      "mac": "f0:20:ff:d6:f7:9a",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.141",
-      "mac": "f0:68:e3:c3:d8:de",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.143",
-      "mac": "68:54:5a:43:4d:e7",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.148",
-      "mac": "38:87:d5:dd:1e:36",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.151",
-      "mac": "04:6c:59:1b:cc:a4",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.155",
-      "mac": "a8:7e:ea:9a:c9:96",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.157",
-      "mac": "84:9e:56:9a:04:5d",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 80,
-          "service": "http"
-        },
-        {
-          "port": 443,
-          "service": "https"
-        },
-        {
-          "port": 3306,
-          "service": "mysql"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.225.164",
-      "mac": "94:bb:43:c1:f7:9b",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": [
-        {
-          "port": 135,
-          "service": "epmap"
-        },
-        {
-          "port": 139,
-          "service": "netbios-ssn"
-        },
-        {
-          "port": 445,
-          "service": "microsoft-ds"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.225.172",
-      "mac": "e4:0d:36:da:6f:bf",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.175",
-      "mac": "3e:33:35:80:79:87",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.184",
-      "mac": "16:08:d3:d8:74:06",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.192",
-      "mac": "38:7a:0e:6f:c9:c1",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.195",
-      "mac": "58:02:05:33:c1:fa",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.207",
-      "mac": "ca:fa:b7:5f:94:f4",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.208",
-      "mac": "14:f6:d8:23:a4:65",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.225.239",
-      "mac": "be:eb:79:1e:81:6a",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.226.0",
-      "mac": "e8:e0:55:f1:1e:b0",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.226.11",
-      "mac": "dc:41:a9:53:0d:13",
-      "hostname": null,
-      "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
@@ -1669,368 +754,60 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.226.47",
-      "mac": "ec:3a:56:31:b2:88",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.226.55",
-      "mac": "3c:ef:a5:2d:14:eb",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.226.76",
-      "mac": "94:bb:43:0c:a1:4f",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.226.79",
-      "mac": "00:41:0e:43:d1:f5",
-      "hostname": null,
-      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.226.122",
-      "mac": "20:58:43:e6:93:56",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.226.127",
-      "mac": "a8:41:f4:16:43:7d",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.226.160",
-      "mac": "8c:8b:5b:06:a2:a5",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.226.200",
-      "mac": "72:21:a5:6b:01:7b",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.226.225",
-      "mac": "a8:59:5f:6e:a3:61",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": [
-        {
-          "port": 135,
-          "service": "epmap"
-        },
-        {
-          "port": 139,
-          "service": "netbios-ssn"
-        },
-        {
-          "port": 445,
-          "service": "microsoft-ds"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.227.20",
-      "mac": "b4:8c:9d:8e:67:f9",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.227.33",
-      "mac": "f4:ce:23:22:36:34",
+      "ip": "172.18.227.5",
+      "mac": "90:65:84:47:96:c7",
       "hostname": null,
       "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
-      "ip": "172.18.227.48",
-      "mac": "94:bb:43:a6:3c:c5",
+      "ip": "172.18.229.64",
+      "mac": "9c:c7:d3:ec:17:ee",
       "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
+      "vendor": null,
       "open_ports": []
     },
     {
-      "ip": "172.18.227.52",
-      "mac": "ea:7c:fb:b8:b9:30",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 135,
-          "service": "epmap"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.227.80",
-      "mac": "8c:55:4a:cc:1d:c0",
+      "ip": "172.18.229.72",
+      "mac": "dc:46:28:9e:0d:4a",
       "hostname": null,
       "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
-      "ip": "172.18.227.101",
-      "mac": "38:8d:3d:25:29:90",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.227.123",
-      "mac": "58:cd:c9:51:aa:f7",
-      "hostname": null,
-      "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.227.140",
-      "mac": "1c:70:c9:d1:5b:b6",
-      "hostname": null,
-      "vendor": "Jiangsu Aisida Electronic Co., Ltd",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.227.156",
-      "mac": "f8:3d:c6:ba:33:14",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.227.166",
-      "mac": "c0:35:32:e8:65:3d",
-      "hostname": null,
-      "vendor": "Liteon Technology Corporation",
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.227.192",
-      "mac": "38:fc:98:20:64:21",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.227.217",
-      "mac": "26:b0:0b:49:f3:1c",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.227.221",
-      "mac": "aa:3c:f7:5f:4d:e2",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.228.117",
-      "mac": "ac:f2:3c:17:16:13",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.228.159",
-      "mac": "a8:41:f4:e6:f5:77",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": [
-        {
-          "port": 135,
-          "service": "epmap"
-        },
-        {
-          "port": 139,
-          "service": "netbios-ssn"
-        },
-        {
-          "port": 445,
-          "service": "microsoft-ds"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.228.202",
-      "mac": "8c:e9:ee:fa:e4:2a",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.228.225",
-      "mac": "38:18:68:68:1e:51",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.229.53",
-      "mac": "94:97:4f:12:62:cd",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.229.87",
-      "mac": "f8:54:f6:b3:f5:8d",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.229.137",
-      "mac": "50:5a:65:c8:99:39",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.229.140",
-      "mac": "10:5b:ad:92:7e:85",
-      "hostname": null,
-      "vendor": "Mega Well Limited",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.229.152",
-      "mac": "f4:4e:b4:8a:5b:7d",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.229.188",
-      "mac": "9c:c7:d3:2c:51:d8",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.229.194",
-      "mac": "e0:e2:58:55:c0:fd",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.230.20",
-      "mac": "04:cf:4b:b2:c8:61",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.230.65",
-      "mac": "50:bb:b5:44:6b:6c",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.230.70",
-      "mac": "7a:82:2e:c3:9a:16",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 5900,
-          "service": "vnc"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.230.190",
-      "mac": "8e:e8:5f:c2:b0:a5",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.230.197",
-      "mac": "a8:e2:91:95:36:e8",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.230.230",
-      "mac": "14:13:33:ba:02:a5",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.230.238",
-      "mac": "70:08:94:82:e2:35",
-      "hostname": null,
-      "vendor": "Liteon Technology Corporation",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.231.42",
-      "mac": "a8:59:5f:8a:54:cb",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.231.64",
-      "mac": "c8:94:02:10:c4:69",
+      "ip": "172.18.229.77",
+      "mac": "28:cd:c4:c3:f3:73",
       "hostname": null,
       "vendor": "Chongqing Fugui Electronics Co.,Ltd.",
       "open_ports": []
     },
     {
-      "ip": "172.18.231.82",
-      "mac": "28:d0:43:fa:ca:c5",
+      "ip": "172.18.230.123",
+      "mac": "e0:2e:0b:79:04:f0",
       "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
+      "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
-      "ip": "172.18.231.98",
-      "mac": "f8:3d:c6:9d:cb:c6",
+      "ip": "172.18.231.81",
+      "mac": "06:aa:00:33:d1:3d",
       "hostname": null,
       "vendor": null,
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        }
-      ]
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.231.103",
+      "mac": "9c:c7:d3:64:b0:a0",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.231.114",
+      "mac": "14:b5:cd:86:d9:8d",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
     },
     {
       "ip": "172.18.231.125",
@@ -2040,48 +817,95 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.231.254",
-      "mac": "da:e3:1a:3f:40:13",
+      "ip": "172.18.231.126",
+      "mac": "20:58:43:03:50:10",
       "hostname": null,
       "vendor": null,
       "open_ports": []
     },
     {
-      "ip": "172.18.232.71",
-      "mac": "c0:35:32:15:a3:a7",
+      "ip": "172.18.231.128",
+      "mac": "9c:c7:d3:9d:03:56",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.231.141",
+      "mac": "c2:38:0d:e0:a6:d9",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.231.165",
+      "mac": "d8:f8:83:2e:03:ce",
+      "hostname": null,
+      "vendor": "Intel Corporate",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.231.174",
+      "mac": "8c:53:e6:dd:d9:ca",
+      "hostname": null,
+      "vendor": "Wistron Neweb Corporation",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.231.200",
+      "mac": "4c:5f:70:a4:d0:df",
+      "hostname": null,
+      "vendor": "Intel Corporate",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.231.211",
+      "mac": "f4:6d:3f:2d:29:d6",
+      "hostname": null,
+      "vendor": "Intel Corporate",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.231.216",
+      "mac": "64:4a:7d:9d:40:90",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.231.223",
+      "mac": "e4:c7:67:d0:b9:66",
+      "hostname": null,
+      "vendor": "Intel Corporate",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.231.246",
+      "mac": "50:bb:b5:9b:96:ca",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.232.89",
+      "mac": "f8:fe:5e:3a:d1:d5",
+      "hostname": null,
+      "vendor": "Intel Corporate",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.232.111",
+      "mac": "c0:35:32:ee:88:5b",
       "hostname": null,
       "vendor": "Liteon Technology Corporation",
       "open_ports": []
     },
     {
-      "ip": "172.18.232.120",
-      "mac": "40:d1:33:de:cc:cc",
+      "ip": "172.18.232.201",
+      "mac": "c0:bf:be:85:c5:70",
       "hostname": null,
-      "vendor": null,
+      "vendor": "AzureWave Technology Inc.",
       "open_ports": []
-    },
-    {
-      "ip": "172.18.232.164",
-      "mac": "20:58:43:1c:36:c2",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.232.165",
-      "mac": "9a:b1:02:59:f8:45",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        },
-        {
-          "port": 5000,
-          "service": "dev-http"
-        }
-      ]
     },
     {
       "ip": "172.18.232.243",
@@ -2091,60 +915,43 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.233.31",
-      "mac": "dc:45:46:65:bb:7a",
+      "ip": "172.18.232.244",
+      "mac": "80:91:33:c3:51:d7",
+      "hostname": null,
+      "vendor": "AzureWave Technology Inc.",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.233.30",
+      "mac": "d0:65:78:a5:3c:e6",
       "hostname": null,
       "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
-      "ip": "172.18.233.97",
-      "mac": "98:8d:46:81:b7:3f",
+      "ip": "172.18.233.182",
+      "mac": "2c:7b:a0:9e:b3:f3",
       "hostname": null,
       "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
-      "ip": "172.18.233.118",
-      "mac": "e2:da:2b:fc:e4:e3",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 8000,
-          "service": "http-alt"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.233.119",
-      "mac": "7e:59:cd:97:2c:d5",
+      "ip": "172.18.233.239",
+      "mac": "9c:67:d6:62:bf:b5",
       "hostname": null,
       "vendor": null,
       "open_ports": []
     },
     {
-      "ip": "172.18.233.137",
-      "mac": "c2:a0:ef:3d:03:1f",
+      "ip": "172.18.233.249",
+      "mac": "f8:54:f6:57:c4:2d",
       "hostname": null,
-      "vendor": null,
+      "vendor": "AzureWave Technology Inc.",
       "open_ports": []
     },
     {
-      "ip": "172.18.233.215",
-      "mac": "5a:b1:c0:4b:66:d5",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 5000,
-          "service": "dev-http"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.233.232",
-      "mac": "50:bb:b5:0e:ae:08",
+      "ip": "172.18.233.251",
+      "mac": "14:b5:cd:d0:d0:f1",
       "hostname": null,
       "vendor": null,
       "open_ports": []
@@ -2157,62 +964,59 @@ output:
       "open_ports": []
     },
     {
-      "ip": "172.18.234.20",
-      "mac": "4c:23:38:2e:f9:cb",
+      "ip": "172.18.234.3",
+      "mac": "10:b1:df:ef:2c:db",
       "hostname": null,
       "vendor": "Cloud Network Technology Singapore Pte. Ltd.",
       "open_ports": []
     },
     {
-      "ip": "172.18.234.124",
-      "mac": "ec:3a:56:31:ce:a2",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.234.126",
-      "mac": "92:af:58:1c:03:36",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 5000,
-          "service": "dev-http"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.234.127",
-      "mac": "c8:8a:9a:52:fd:87",
-      "hostname": null,
-      "vendor": "Intel Corporate",
-      "open_ports": [
-        {
-          "port": 80,
-          "service": "http"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.234.180",
-      "mac": "02:52:77:42:5f:83",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.235.43",
-      "mac": "b0:47:e9:f4:86:ac",
+      "ip": "172.18.234.14",
+      "mac": "a0:d3:65:99:52:a5",
       "hostname": null,
       "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
-      "ip": "172.18.235.62",
-      "mac": "b4:8c:9d:09:11:57",
+      "ip": "172.18.234.15",
+      "mac": "22:a2:47:68:8f:e4",
       "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.234.43",
+      "mac": "b2:e1:6d:ef:98:a0",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.234.91",
+      "mac": "94:97:4f:13:1b:cd",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.234.162",
+      "mac": "4c:5f:70:35:d7:43",
+      "hostname": null,
+      "vendor": "Intel Corporate",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.234.165",
+      "mac": "28:0c:50:02:14:58",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.235.198",
+      "mac": "50:2e:91:5d:26:78",
+      "hostname": null,
+      "vendor": null,
       "open_ports": []
     },
     {
@@ -2220,136 +1024,105 @@ output:
       "mac": "94:bb:43:b5:7d:2c",
       "hostname": null,
       "vendor": "AzureWave Technology Inc.",
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        }
-      ]
+      "open_ports": []
     },
     {
-      "ip": "172.18.236.7",
-      "mac": "4c:b0:4a:00:84:03",
+      "ip": "172.18.235.202",
+      "mac": "70:66:55:d7:f4:63",
+      "hostname": null,
+      "vendor": "AzureWave Technology Inc.",
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.235.212",
+      "mac": "8a:03:22:5b:59:a8",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.235.220",
+      "mac": "bc:d2:2c:6a:ff:04",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.235.222",
+      "mac": "38:8d:3d:fe:b1:12",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.235.237",
+      "mac": "f8:3d:c6:4b:ba:b4",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.235.238",
+      "mac": "2e:c2:5f:c1:61:43",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.235.248",
+      "mac": "8a:c6:eb:89:c4:15",
+      "hostname": null,
+      "vendor": null,
+      "open_ports": []
+    },
+    {
+      "ip": "172.18.235.254",
+      "mac": "30:f6:ef:ac:95:bd",
       "hostname": null,
       "vendor": "Intel Corporate",
       "open_ports": []
     },
     {
-      "ip": "172.18.236.73",
-      "mac": "f8:54:f6:24:63:24",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.236.251",
-      "mac": "5c:80:b6:3e:1d:04",
+      "ip": "172.18.239.234",
+      "mac": "f0:20:ff:d0:55:2f",
       "hostname": null,
       "vendor": "Intel Corporate",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.237.9",
-      "mac": "60:ff:9e:46:66:84",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.237.20",
-      "mac": "1c:ce:51:ff:e4:4e",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
-      "open_ports": [
-        {
-          "port": 5900,
-          "service": "vnc"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.237.199",
-      "mac": "b8:94:e7:19:a7:76",
-      "hostname": null,
-      "vendor": "Xiaomi Communications Co Ltd",
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.237.248",
-      "mac": "62:84:8c:73:53:92",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.238.68",
-      "mac": "12:cb:6c:25:64:ce",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.238.85",
-      "mac": "d2:ad:80:f2:1c:80",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.238.137",
-      "mac": "80:e4:ba:9d:b7:78",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": []
-    },
-    {
-      "ip": "172.18.238.159",
-      "mac": "b2:2a:b7:86:3e:db",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 5000,
-          "service": "dev-http"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.238.170",
-      "mac": "c2:e6:2a:2d:3f:58",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 5000,
-          "service": "dev-http"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.238.241",
-      "mac": "ba:72:a8:84:e4:5a",
-      "hostname": null,
-      "vendor": null,
-      "open_ports": [
-        {
-          "port": 3306,
-          "service": "mysql"
-        },
-        {
-          "port": 5000,
-          "service": "dev-http"
-        }
-      ]
-    },
-    {
-      "ip": "172.18.239.78",
-      "mac": "10:68:38:df:91:17",
-      "hostname": null,
-      "vendor": "AzureWave Technology Inc.",
       "open_ports": []
     }
   ]
+}
+
+======================================================================
+tool:      email_auth_audit
+case:      google.com
+arguments: {"domain": "google.com", "timeout_seconds": 5.0}
+status:    FAIL
+failure detail: tool returned isError=True: Error executing tool email_auth_audit
+
+======================================================================
+tool:      epss_lookup
+case:      real CVEs: Log4Shell (high EPSS) + Apache 2.4.6 DoS (low EPSS)
+arguments: {"cve_ids": ["CVE-2021-44228", "CVE-2013-4352"]}
+status:    PASS
+output:
+{
+  "results": [
+    {
+      "cve": "CVE-2021-44228",
+      "scored": true,
+      "epss": 0.99999,
+      "percentile": 1.0,
+      "date": "2026-08-29"
+    },
+    {
+      "cve": "CVE-2013-4352",
+      "scored": true,
+      "epss": 0.11534,
+      "percentile": 0.95777,
+      "date": "2026-08-29"
+    }
+  ],
+  "total_scored": 2
 }
 
 ======================================================================
@@ -2362,6 +1135,98 @@ output:
   "gateway": "172.18.224.1",
   "interface": "wlp2s0",
   "raw": "default via 172.18.224.1 dev wlp2s0 proto dhcp src 172.18.232.97 metric 600"
+}
+
+======================================================================
+tool:      http_header_audit
+case:      gateway :80
+arguments: {"host": "172.18.224.1", "port": 80, "timeout_seconds": 5.0}
+status:    FAIL
+failure detail: tool returned an error payload: HTTP request failed: timed out
+
+======================================================================
+tool:      http_header_audit
+case:      gateway :443
+arguments: {"host": "172.18.224.1", "port": 443, "timeout_seconds": 5.0}
+status:    FAIL
+failure detail: tool returned an error payload: HTTP request failed: _ssl.c:1063: The handshake operation timed out
+
+======================================================================
+tool:      js_library_audit
+case:      jquery.com homepage
+arguments: {"url": "https://jquery.com/", "timeout_seconds": 10.0}
+status:    PASS
+output:
+{
+  "page": "https://jquery.com/",
+  "scripts_found": 3,
+  "scripts_checked": 3,
+  "results": [
+    {
+      "script": "https://code.jquery.com/jquery-4.0.0.min.js",
+      "identified": true,
+      "library": "jquery",
+      "version": "4.0.0",
+      "matched_by": "filename",
+      "vulnerabilities": []
+    },
+    {
+      "script": "https://jquery.com/wp-content/themes/jquery/js/main.js?v=10baaffd",
+      "identified": false
+    },
+    {
+      "script": "https://jquery.com/wp-content/themes/jquery/lib/typesense-minibar/typesense-minibar.js?v=830f1ee1",
+      "identified": false
+    }
+  ],
+  "retire_js_database": {
+    "source": "cache",
+    "cache_age_seconds": 19022.0
+  }
+}
+
+======================================================================
+tool:      kev_lookup
+case:      real CVEs: Log4Shell (in KEV) + Apache 2.4.6 DoS (not in KEV)
+arguments: {"cve_ids": ["CVE-2021-44228", "CVE-2013-4352"]}
+status:    PASS
+output:
+{
+  "results": [
+    {
+      "cve": "CVE-2021-44228",
+      "in_kev": true,
+      "details": {
+        "cveID": "CVE-2021-44228",
+        "vendorProject": "Apache",
+        "product": "Log4j2",
+        "vulnerabilityName": "Apache Log4j2 Remote Code Execution Vulnerability",
+        "dateAdded": "2021-12-10",
+        "shortDescription": "Apache Log4j2 contains a vulnerability where JNDI features do not protect against attacker-controlled JNDI-related endpoints, allowing for remote code execution.",
+        "requiredAction": "For all affected software assets for which updates exist, the only acceptable remediation actions are: 1) Apply updates; OR 2) remove affected assets from agency networks. Temporary mitigations using one of the measures provided at https://www.cisa.gov/uscert/ed-22-02-apache-log4j-recommended-mitigation-measures are only acceptable until updates are available.",
+        "dueDate": "2021-12-24",
+        "knownRansomwareCampaignUse": "Known",
+        "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-44228",
+        "cwes": [
+          "CWE-20",
+          "CWE-400",
+          "CWE-502"
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2013-4352",
+      "in_kev": false,
+      "details": null
+    }
+  ],
+  "catalog_version": "2026.08.27",
+  "catalog_date_released": "2026-08-27T17:00:36.6632Z",
+  "catalog_total_entries": 1685,
+  "cache": {
+    "source": "cache",
+    "cache_age_seconds": 19018.2
+  }
 }
 
 ======================================================================
@@ -2405,17 +1270,9 @@ output:
     "172.18.224.1": {
       "state": "up",
       "hostnames": [
-        "_gateway"
+        ""
       ],
       "ports": [
-        {
-          "port": 22,
-          "protocol": "tcp",
-          "state": "filtered",
-          "service": "ssh",
-          "product": "",
-          "version": ""
-        },
         {
           "port": 25,
           "protocol": "tcp",
@@ -2453,7 +1310,7 @@ output:
           "protocol": "tcp",
           "state": "open",
           "service": "https",
-          "product": "Apache/2.4.6 (Unix) OpenSSL/1.0.1",
+          "product": "",
           "version": ""
         }
       ]
@@ -2470,7 +1327,7 @@ output:
 {
   "host": "172.18.224.1",
   "alive": true,
-  "raw_output": "PING 172.18.224.1 (172.18.224.1) 56(84) bytes of data.\n64 bytes from 172.18.224.1: icmp_seq=1 ttl=64 time=52.2 ms\n\n--- 172.18.224.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 52.170/52.170/52.170/0.000 ms"
+  "raw_output": "PING 172.18.224.1 (172.18.224.1) 56(84) bytes of data.\n64 bytes from 172.18.224.1: icmp_seq=1 ttl=64 time=1554 ms\n\n--- 172.18.224.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1553.592/1553.592/1553.592/0.000 ms"
 }
 
 ======================================================================
@@ -2484,134 +1341,63 @@ output:
   "scanned": 4094,
   "alive_hosts": [
     "172.18.224.1",
-    "172.18.224.44",
+    "172.18.224.8",
+    "172.18.224.10",
+    "172.18.224.33",
     "172.18.224.45",
-    "172.18.224.65",
-    "172.18.224.94",
     "172.18.224.109",
-    "172.18.224.124",
-    "172.18.224.163",
-    "172.18.224.185",
-    "172.18.224.187",
-    "172.18.224.201",
-    "172.18.224.219",
-    "172.18.224.234",
-    "172.18.224.235",
-    "172.18.224.250",
-    "172.18.225.15",
-    "172.18.225.19",
-    "172.18.225.24",
-    "172.18.225.43",
-    "172.18.225.98",
-    "172.18.225.108",
-    "172.18.225.109",
-    "172.18.225.118",
-    "172.18.225.120",
+    "172.18.224.112",
+    "172.18.224.121",
+    "172.18.225.29",
     "172.18.225.140",
-    "172.18.225.152",
-    "172.18.225.164",
-    "172.18.225.175",
-    "172.18.225.184",
+    "172.18.225.150",
     "172.18.225.195",
-    "172.18.225.198",
-    "172.18.225.207",
-    "172.18.226.39",
+    "172.18.225.243",
+    "172.18.226.2",
     "172.18.226.55",
     "172.18.226.76",
+    "172.18.226.82",
+    "172.18.226.86",
     "172.18.226.104",
-    "172.18.226.174",
-    "172.18.226.200",
-    "172.18.226.225",
-    "172.18.227.33",
-    "172.18.227.80",
-    "172.18.227.140",
-    "172.18.227.221",
-    "172.18.228.1",
-    "172.18.228.24",
-    "172.18.228.29",
-    "172.18.228.159",
-    "172.18.228.234",
-    "172.18.229.70",
-    "172.18.229.77",
-    "172.18.229.148",
-    "172.18.229.152",
-    "172.18.229.201",
-    "172.18.229.231",
+    "172.18.226.112",
+    "172.18.226.121",
+    "172.18.227.158",
+    "172.18.227.171",
+    "172.18.227.253",
+    "172.18.230.25",
     "172.18.230.189",
-    "172.18.231.189",
-    "172.18.231.242",
-    "172.18.232.39",
-    "172.18.232.72",
+    "172.18.230.220",
     "172.18.232.97",
-    "172.18.232.150",
-    "172.18.232.245",
-    "172.18.233.55",
-    "172.18.233.118",
-    "172.18.233.119",
-    "172.18.233.137",
-    "172.18.233.160",
-    "172.18.233.165",
-    "172.18.233.215",
-    "172.18.234.57",
-    "172.18.234.126",
-    "172.18.234.166",
-    "172.18.234.210",
+    "172.18.233.176",
+    "172.18.233.182",
+    "172.18.233.240",
+    "172.18.234.1",
+    "172.18.234.3",
+    "172.18.234.153",
     "172.18.234.211",
+    "172.18.234.219",
     "172.18.234.231",
-    "172.18.235.65",
-    "172.18.235.138",
-    "172.18.235.187",
-    "172.18.235.222",
-    "172.18.235.233",
-    "172.18.236.53",
-    "172.18.236.103",
-    "172.18.236.146",
-    "172.18.236.243",
-    "172.18.237.43",
-    "172.18.237.79",
-    "172.18.237.87",
-    "172.18.237.93",
-    "172.18.237.138",
-    "172.18.237.164",
-    "172.18.237.178",
-    "172.18.237.181",
-    "172.18.237.182",
-    "172.18.237.186",
-    "172.18.237.192",
-    "172.18.237.199",
-    "172.18.237.220",
-    "172.18.237.233",
-    "172.18.237.239",
-    "172.18.238.37",
-    "172.18.238.117",
-    "172.18.238.135",
-    "172.18.238.137",
-    "172.18.238.141",
-    "172.18.238.142",
-    "172.18.238.148",
-    "172.18.238.159",
-    "172.18.238.170",
-    "172.18.238.209",
+    "172.18.234.251",
+    "172.18.235.57",
+    "172.18.235.170",
+    "172.18.235.202",
+    "172.18.235.238",
+    "172.18.235.248",
+    "172.18.236.6",
+    "172.18.236.22",
+    "172.18.236.85",
+    "172.18.236.89",
+    "172.18.236.164",
+    "172.18.237.92",
+    "172.18.237.115",
+    "172.18.238.17",
+    "172.18.238.34",
+    "172.18.238.162",
     "172.18.238.210",
-    "172.18.238.217",
-    "172.18.238.239",
-    "172.18.238.245",
-    "172.18.238.249",
-    "172.18.238.251",
-    "172.18.239.29",
-    "172.18.239.46",
-    "172.18.239.55",
-    "172.18.239.65",
-    "172.18.239.109",
-    "172.18.239.145",
-    "172.18.239.161",
-    "172.18.239.178",
-    "172.18.239.187",
-    "172.18.239.195",
-    "172.18.239.208",
-    "172.18.239.223",
-    "172.18.239.238",
-    "172.18.239.254"
+    "172.18.239.4",
+    "172.18.239.34",
+    "172.18.239.73",
+    "172.18.239.195"
   ]
 }
 
@@ -2625,24 +1411,7 @@ output:
   "host": "172.18.224.1",
   "resolved_ip": "172.18.224.1",
   "scanned_ports": 33,
-  "open_ports": [
-    {
-      "port": 25,
-      "service": "smtp"
-    },
-    {
-      "port": 53,
-      "service": "domain"
-    },
-    {
-      "port": 80,
-      "service": "http"
-    },
-    {
-      "port": 443,
-      "service": "https"
-    }
-  ]
+  "open_ports": []
 }
 
 ======================================================================
@@ -2671,6 +1440,56 @@ output:
 }
 
 ======================================================================
-SUMMARY: 10/11 passed
+tool:      secret_scan
+case:      synthetic text blob with fake secrets
+arguments: {"text": "config = {\n  aws_key: 'AKIAABCDEFGHIJKLMNOP',\n  api_token: 'sk_live_ABCDEFGHIJKLMNOPQRSTUVWX',\n  jwt: 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.dozjgNryP4J3jVmNHl0w5N_XgL0n3I9PlFUP0THsR8U',\n  password: 'Sup3rSecretPass1234'\n}\n"}
+status:    PASS
+output:
+{
+  "length_scanned": 234,
+  "finding_count": 5,
+  "findings": [
+    {
+      "type": "AWS Access Key ID",
+      "match": "AKIA************MNOP",
+      "position": 23
+    },
+    {
+      "type": "Stripe Live Key",
+      "match": "sk_l************************UVWX",
+      "position": 60
+    },
+    {
+      "type": "JWT",
+      "match": "eyJh************************************************************************************sR8U",
+      "position": 103
+    },
+    {
+      "type": "Generic API Key/Secret Assignment",
+      "match": "toke*********************************VWX'",
+      "position": 52
+    },
+    {
+      "type": "Generic API Key/Secret Assignment",
+      "match": "pass***********************234'",
+      "position": 200
+    }
+  ],
+  "reveal": false
+}
+
+======================================================================
+tool:      tls_scan
+case:      gateway :443
+arguments: {"host": "172.18.224.1", "port": 443, "timeout_seconds": 5.0}
+status:    FAIL
+failure detail: tool returned an error payload: TLS connection failed: _ssl.c:1063: The handshake operation timed out
+
+======================================================================
+SUMMARY: 17/22 passed
 Failing tools were left unfixed, per instructions:
+  - email_auth_audit (google.com): tool returned isError=True: Error executing tool email_auth_audit
+  - http_header_audit (gateway :80): tool returned an error payload: HTTP request failed: timed out
+  - http_header_audit (gateway :443): tool returned an error payload: HTTP request failed: _ssl.c:1063: The handshake operation timed out
   - nmap_os_scan (gateway -O): tool returned an error payload: 'TCP/IP fingerprinting (for OS scan) requires root privileges.\nQUITTING!\n'
+  - tls_scan (gateway :443): tool returned an error payload: TLS connection failed: _ssl.c:1063: The handshake operation timed out
